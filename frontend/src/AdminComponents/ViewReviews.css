@@ -1,0 +1,143 @@
+.user-my-review {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin: 90px auto;
+  border-radius: 5px;
+}
+
+.userView-line {
+  background: linear-gradient(to right, #5dbb63, #3d82f6, #f97316, #8b5cf6);
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 auto 20px auto;
+}
+
+.user-my-review h2 {
+  text-align: center;
+  color: #2e7d32;
+  margin: 10px;
+}
+
+.noReviews {
+  text-align: center;
+}
+
+.vreview-card {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 15px auto;
+  width: 100%;
+  /* max-width: 600px; */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vreview-card h3 {
+  margin-top: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #388e3c;
+}
+
+.vreview-card p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.vreview-card strong {
+  color: #555;
+}
+
+.vreview-card button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.viewBtn {
+  background-color: #2196F3;
+  color: white;
+}
+
+.viewProf {
+  background-color: rgb(255, 27, 27);
+  color: white;
+  float: right;
+}
+
+.Adminfilter-section {
+  display: flex;
+  /* margin-left: 15%;
+    margin-right: 15%; */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  flex-direction: row;
+  gap: 10px;
+  padding: 9px;
+  height: auto;
+}
+
+.Adminfilter-section input,
+.Adminfilter-section select {
+  padding: 10px;
+  border-radius: 5px;
+  outline: #1c612b;
+  width: 50%;
+  border: 2px solid #218838;
+  font-size: 16px;
+}
+
+
+
+/* Modal styles */
+.modal-overlay {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  color: #000000;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+  width: 400px;
+  position: relative;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}

@@ -1,0 +1,290 @@
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  box-shadow: 0 4px 12px rgb(0, 0, 0, 0.2);
+}
+
+.login-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  /* Prevent scrollbars from animation */
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d2edd9;
+  height: 100%;
+  /* Added Animation */
+  opacity: 0;
+  animation: slideInFromLeft 0.8s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+}
+
+.login-image {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+.login-side {
+  padding: 10px 100px;
+}
+
+.logo-head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  /* Added Animation */
+  opacity: 0;
+  animation: fadeInFromBottom 0.8s ease-out 0.2s forwards;
+  /* 0.2s delay */
+}
+
+@keyframes fadeInFromBottom {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.login-box h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #2f4f4f;
+}
+
+.login-box label {
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -16px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.error-input {
+  border-color: red;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pswd-wrapper {
+  position: relative;
+}
+
+.pswd-wrapper input {
+  width: 100%;
+  padding-right: 60px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 16px;
+  top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 14px;
+  color: #10be3c;
+  user-select: none;
+}
+
+
+.submitBtn {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #218838;
+}
+
+.signup-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*  Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+
+  .image-section {
+    display: none;
+  }
+
+  .login-side {
+    padding: 0;
+  }
+
+  .login-box {
+    width: 100%;
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  .logo-head {
+    padding-left: 0;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+}
+
+/* --- NEW ANIMATED POPUP STYLES --- */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.popup-content {
+  background-color: white;
+  padding: 30px 50px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  /* Animation for the popup box itself */
+  transform: translateY(30px);
+  opacity: 0;
+  animation: slideUpFadeIn 0.4s ease-out forwards;
+}
+
+@keyframes slideUpFadeIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.popup-content p {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+.popup-icon {
+  display: block;
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+/* Specific styles for success and error types */
+.popup-content.success {
+  border-top: 5px solid #28a745;
+}
+
+.popup-content.error {
+  border-top: 5px solid #dc3545;
+}

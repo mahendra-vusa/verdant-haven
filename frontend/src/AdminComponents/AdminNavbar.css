@@ -1,0 +1,49 @@
+.navbar {
+    background: linear-gradient(to right, #226d27, #c5bfa0, #7c4b1e);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-items {
+    display: flex;
+    gap: 40px;
+    cursor: pointer;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.admin-button {
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.logout-btn {
+    background-color: rgb(231, 100, 80);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px 8px 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.linkk {
+    text-decoration: none;
+    color: white;
+}

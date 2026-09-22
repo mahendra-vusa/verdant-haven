@@ -1,0 +1,159 @@
+.heading {
+    text-align: center;
+    margin-top: 20px;
+    color: #2e7d32;
+}
+
+.fullpage {
+    margin-top: 80px;
+}
+
+hr {
+    margin: 10px auto;
+    width: 70%;
+    border: 1px solid #ccc;
+}
+
+.filter-section {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0px;
+    height: 50px;
+
+}
+
+.filter-section input,
+.filter-section select {
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    border: 1px solid #4caf50;
+    font-size: 16px;
+}
+
+.cardsPlacing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 35%;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cardsPlacing img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.edt-button,
+.del-btn {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.edt-button {
+    background-color: #4caf50;
+    color: white;
+    float: left;
+}
+
+.del-btn {
+    background-color: #f44336;
+    color: white;
+    float: right;
+}
+
+.navigation-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.navigation-section button {
+    padding: 8px 16px;
+    border: none;
+    background-color: rgb(192, 191, 191);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navigation-section p {
+    font-weight: bold;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.confirm-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #bdc3c7;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}

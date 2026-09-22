@@ -1,0 +1,51 @@
+.hp-image {
+    position: relative;
+    text-align: center;
+    margin-top: 60px;
+
+}
+
+.hp-bg-image {
+    width: 100%;
+    max-height: 350px;
+
+    object-fit: cover;
+}
+
+.bg-img-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hp-description {
+    background-color: white;
+    padding: 20px;
+    line-height: 0.7cm;
+
+
+}
+
+.hp-desc {
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 800px;
+    border-radius: 5px;
+}
+
+.hp-footer {
+    background-color: darkgreen;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

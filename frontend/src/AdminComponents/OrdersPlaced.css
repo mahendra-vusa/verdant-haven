@@ -1,0 +1,245 @@
+.main {
+    background-color: rgb(245, 241, 241);
+    margin: 80px 100px 20px 100px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Orders Page */
+.orders-page {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.orders-page h1 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 30px;
+}
+
+/* Headings and Separators */
+.h1 {
+    text-align: center;
+}
+
+.hr {
+    width: 100%;
+}
+
+/* Search and Sort */
+.search {
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    width: 55%;
+    margin: 0 0 10px 10px;
+}
+
+.searchLabel {
+    margin-left: 10px;
+    ;
+}
+
+.sort {
+    padding: 8px;
+    border-radius: 10px;
+    margin-left: 60px;
+}
+
+/* Navigation */
+.navigation-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.navigation-section button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #2196f3;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navigation-section p {
+    font-weight: bold;
+}
+
+/* Item Cards */
+.order-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item-card {
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.item-quant {
+    float: right;
+    font-weight: bold;
+}
+
+.items {
+    border: 1px solid lightgrey;
+    background-color: #eafaf1;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.item-image {
+    flex: 0 0 100px;
+    margin-right: 20px;
+}
+
+.plantimage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-details {
+    flex: 1;
+    text-align: left;
+}
+
+/* Order Cards */
+.order-card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 10px 20px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    line-height: 1.8;
+}
+
+
+.order-card h3 {
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+.order-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Order Actions */
+.order-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.order-card select {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: #f8f9fa;
+}
+
+.btn-track,
+.btn-view,
+.btn-cancel {
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-track {
+    background-color: #2196f3;
+}
+
+.btn-view {
+    background-color: #4caf50;
+}
+
+.btn-cancel {
+    background-color: #f44336;
+}
+
+.btn-track:hover,
+.btn-view:hover,
+.btn-cancel:hover {
+    opacity: 0.9;
+}
+
+/* Admin Actions */
+.admin-order-actions {
+    margin-top: 10px;
+}
+
+.btn-view-items,
+.btn-view-profile {
+    margin-right: 10px;
+    padding: 6px 12px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-view-items {
+    background-color: #007bff;
+}
+
+.btn-view-profile {
+    background-color: green;
+}
+
+.btn-view-items:hover,
+.btn-view-profile:hover {
+    opacity: 1.0;
+    transform: scale(1.15);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+
+    /* background-color: #0056b3; */
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.modal-close {
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}

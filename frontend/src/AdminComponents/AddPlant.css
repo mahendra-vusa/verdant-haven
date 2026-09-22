@@ -1,0 +1,161 @@
+.page-container {
+  /* position: absolute; */
+  top: 70px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 40px;
+
+}
+
+.hr-line {
+  margin: 0px;
+  width: 100%;
+  background: linear-gradient(to right, #4caf50, #d059ae);
+  padding: 2px;
+
+}
+
+.fullPage {
+  background-image: url('../assets/images/background.webp');
+  /* Adjust path if needed */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.addPlantForm {
+  width: 600px;
+  margin: 60px 40px 60px auto;
+  padding: 30px 25px;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 10;
+
+}
+
+.h1 {
+  text-align: center;
+  color: #2e7d32;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.addPlantForm label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.addPlantForm input,
+.addPlantForm textarea,
+.addPlantForm select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: none;
+  border-bottom: 2px solid #9d9b9b;
+  border-radius: 6px;
+  font-size: 14px;
+  background: transparent;
+  transition: border-color 0.3s ease;
+}
+
+.addPlantForm input:focus,
+.addPlantForm textarea:focus,
+.addPlantForm select:focus {
+  border-color: #4caf50;
+  background: transparent;
+  outline: none;
+}
+
+.addPlantForm input[type="file"] {
+  padding: 6px;
+  background-color: #f5f5f5;
+  border: 1px dashed #aaa;
+}
+
+.addPlantForm .error {
+  color: #d32f2f;
+  font-size: 13px;
+  margin-top: -12px;
+  margin-bottom: 12px;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #388e3c;
+}
+
+.succDiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.succPopup {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.succPopup button {
+  width: fit-content;
+  border-radius: 3px;
+}
+
+.backBtn {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  float: left;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .addPlantForm {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .h1 {
+    font-size: 20px;
+  }
+}

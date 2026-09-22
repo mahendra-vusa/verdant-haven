@@ -1,0 +1,117 @@
+/* Main container for the checkout page */
+.confirmation-container {
+    max-width: 650px;
+    margin: 70px auto;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Main heading style */
+.order-confirm-heading {
+    text-align: center;
+    color: #006400;
+    /* Dark Green */
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+/* Container for invoice and shipping details */
+.invoice-container {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+/* Sub-heading style for invoice/shipping */
+.invoice-heading {
+    text-align: center;
+    color: #006400;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+}
+
+/* Styling for each item in the invoice */
+.invoice-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    font-size: 1em;
+    color: #333;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.invoice-item:last-of-type {
+    border-bottom: none;
+}
+
+.invoice-item span:first-child {
+    font-weight: 500;
+}
+
+/* Horizontal rule before the total amount */
+.invoice-total-hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+/* Total amount text styling */
+.total-amount {
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #333;
+    margin: 20px 0 0 0;
+}
+
+/* Address headings */
+.inputs-div h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 1em;
+}
+
+/* Address input fields */
+.checkout-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.checkout-input::placeholder {
+    color: #aaa;
+}
+
+/* Container for the place order button */
+.place-order-btn-cnt {
+    margin-top: 30px;
+}
+
+/* Place Order button styling */
+.place-order-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.place-order-btn:hover {
+    background-color: #218838;
+}
